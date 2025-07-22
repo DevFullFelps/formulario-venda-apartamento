@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" class="css">
     <title>Venda - Apartamento</title>
 </head>
+
 <body>
     <div class="container">
         <div class="header">
@@ -19,17 +21,133 @@
                 <div class="form-body">
                     <h1 class="form-title">Venda seu AP</h1>
                     <p>Preencha as informações abaixo e é só aguardar para fechar negócio!</p>
-                    <div class="box-input">
-                        <label for="title">Título do Anúncio <span class="required-field">*</span></label>
-                        <input type="text" name="title" id="title" class="block" placeholder="Descreva o Título do anuncio" minlength="1" maxlength="30" required>
+
+                    <div class="text-top">
+                        <h3>Informações do Imóvel</h3>
                     </div>
                     <div class="box-input">
-                        <label for="price">Preço <span class="required-field">*</span></label>
-                        <input type="number" name="price" id="price" class="block" placeholder="Insira o preço (R$)" required>
+                        <label for="title">Título do Anúncio <span class="required-field">*</span></label>
+                        <input type="text" name="title" id="title" class="block"
+                            placeholder="Descreva o Título do anuncio" minlength="1" maxlength="30" required>
+                    </div>
+                    <div class="box-input"></div>
+                    <label for="local">Endereço Completo <span class="required-field">*</span></label>
+                    <input type="text" name="local" id="local" class="block"
+                        placeholder="Rua/Número/Bairro/Cidade/Estado" minlength="1" maxlength="50" required>
+                    <div class="box-input">
+                        <label for="area">Área <span class="required-field">*</span></label>
+                        <input type="number" name="area" id="area" class="block" placeholder="Área útil (m²)" required>
+                    </div>
+                    <div class="box-input">
+                        <label for="room">Quartos <span class="required-field">*</span></label>
+                        <select name="room" id="room" class="block">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="box-input">
+                        <label for="bathroom">Banheiros <span class="required-field">*</span></label>
+                        <select name="bathroom" id="bathroom" class="block">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div class="box-input">
+                        <label for="garage">Vagas de garagem <span class="required-field">*</span></label>
+                        <select name="garage" id="garage" class="block">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="box-input">
+                        <label for="floor">Andar <span class="required-field">*</span></label>
+                        <input type="number" name="floor" id="floor" class="block" required>
+                    </div>
+                    <div class="box-input">
+                        <label for="price">Valor do imóvel <span class="required-field">*</span></label>
+                        <input type="number" name="price" id="price" class="block" required>
+                    </div>
+                    <div class="box-input">
+                        <label for="cond">Valor do condomínio <span class="required-field">*</span></label>
+                        <input type="number" name="cond" id="cond" class="block" required>
+                    </div>
+                    <div class="box-input">
+                        <label for="iptu">Valor IPTU <span class="required-field">*</span></label>
+                        <input type="number" name="iptu" id="cond" class="block" required>
+                    </div>
+                    <div class="box-input">
+                        <label for="description">Descrição do imóvel <span class="required-field">*</span></label>
+                        <input type="textarea" name="description" id="description" class="block" required
+                            placeholder="Descreva detalhadamente seu imóvel">
+                    </div>
+                    <div class="text-top">
+                        <h3>Características e comodidades</h3>
+                    </div>
+                    <div class="optional-box">
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox" name="optional[]" id="balcony" value="balcony">
+                                <label for="balcony">Varanda</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" id="barbecue" value="barbecue">
+                                <label for="barbecue">Churrasqueira</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" id="pool" value="pool">
+                                <label for="pool">Piscina</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" id="gym" value="gym">
+                                <label for="gym">Academia</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="optional-box">
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox" name="optional[]" id="doorman" value="doorman">
+                                <label for="doorman">Portaria 24h</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" id="elevator" value="elevator">
+                                <label for="balcony">Elevador</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" id="petf" value="petf">
+                                <label for="petf">Pet Friendly</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" id="furnished" value="furnished">
+                                <label for="furnished">Mobiliado</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-top">
+                        <h3>Informações do Proprietário</h3>
+                    </div>
+                    <div class="box-input">
+                        <label for="namep">Nome completo <span class="required-field">*</span></label>
+                        <input type="text" name="namep" id="namep" class="block" required>
+                    </div>
+                    <div class="box-input">
+                        <label for="phone">Telefone / Whatsapp <span class="required-field">*</span></label>
+                        <input type="tel" name="phone" id="phone" class="block" required>
+                    </div>                    
+                    <div class="box-input">
+                        <label for="email">E-mail <span class="required-field">*</span></label>
+                        <input type="email" name="email" id="email" class="block" required>
                     </div>
                 </div>
             </div>
         </form>
     </div>
 </body>
+
 </html>
