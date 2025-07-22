@@ -14,10 +14,19 @@
         <form>
             <div class="form-container">
                 <div class="form-header">
-                    <h3>Cadastro de imóvel</h3>
+                    <h3>Cadastro de Venda</h3>
                 </div>
                 <div class="form-body">
-
+                    <h1 class="form-title">Venda seu AP</h1>
+                    <p>Preencha as informações abaixo e é só aguardar para fechar negócio!</p>
+                    <div class="box-input">
+                        <label for="title">Título do Anúncio <span class="required-field">*</span></label>
+                        <input type="text" name="title" id="title" class="block" placeholder="Descreva o Título do anuncio" minlength="1" maxlength="30" required>
+                    </div>
+                    <div class="box-input">
+                        <label for="price">Preço <span class="required-field">*</span></label>
+                        <input type="number" name="price" id="price" class="block" placeholder="Insira o preço (R$)" required>
+                    </div>
                 </div>
             </div>
         </form>
